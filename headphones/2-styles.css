@@ -21,9 +21,7 @@ a {
     text-decoration: none;
     color: var(--color-white);
 }
-a:visited {
-    color: inherit;
-}
+
 a:hover, a:active {
     color: var(--link-hover-active);
 }
@@ -41,10 +39,6 @@ a:hover, a:active {
     margin-top: 25px;
     margin-bottom: 50px;
     /* padding: 17px 7px; */
-}
-
-.button:hover, .button:active {
-    opacity: var(--button-opacity-hover-active);
 }
 
 body {

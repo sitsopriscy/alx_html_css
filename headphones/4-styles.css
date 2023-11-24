@@ -17,16 +17,16 @@ html {
 body {
     font-family: var(--main-font-family);
 }
+
 a {
     text-decoration: none;
     color: var(--color-white);
 }
-a:visited {
-    color: inherit;
-}
+
 a:hover, a:active {
     color: var(--link-hover-active);
 }
+
 .button {
     background: var(--link-hover-active);
 	color: var(--color-white);
@@ -41,10 +41,6 @@ a:hover, a:active {
     margin-top: 25px;
     margin-bottom: 50px;
     /* padding: 17px 7px; */
-}
-
-.button:hover, .button:active {
-    opacity: var(--button-opacity-hover-active);
 }
 
 body {
@@ -78,10 +74,12 @@ h2 {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 64px;
     color: #979797;
+    width: 90%;
+    
 }
 
 .logo img {
@@ -90,11 +88,15 @@ h2 {
     /* padding-top: 24px;
     margin: 0px; */
 }
-.nav_menu {
+.nav_menu ul {
     display: flex;
     justify-content: space-between;
     width: 255px;
     height: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
     /* padding-top: 37px; */
 }
 
@@ -103,7 +105,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 372px;
+    padding-top: 340px;
     /* margin-left: 382px; */
     /* width: 637px; */
     height: 313px;
@@ -121,6 +123,20 @@ h2 {
 .main_part_title {
     line-height: 5px;
 }
+
+@media screen and (max-width: 480px) {
+    .header {
+        max-width: 480px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+    .logo {
+        width: 50%;
+    }
+     .nav_menu {
+        display: ;
+     }
 
 /* what to do section */
 
