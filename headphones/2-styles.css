@@ -61,6 +61,11 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
 /* header section */
 
 .header_container{

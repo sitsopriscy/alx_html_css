@@ -61,6 +61,11 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
 /* header section */
 
 .header_container{
@@ -195,7 +200,7 @@ h1 {
     align-items: center;
     
 }
-.part_3_dark h1 {
+.part_3_dark h2 {
   /* width: 488px; */
 }
 
@@ -204,7 +209,7 @@ h1 {
     
 }
 
-.pentagon h1 {
+.pentagon h2 {
     font-weight: bold;
     font-size: 46px;
 }
@@ -213,6 +218,8 @@ h1 {
     font-size: 14px;
 }
 
+/* Contact us section */
+
 .contact_us_section {
     display: flex;
     flex-direction: column;
@@ -220,25 +227,58 @@ h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     width: 100%;
+    height: 373px;
+}
+.contact_us h2 {
+    color: #071629;
 }
 
-footer {
+.form input{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    width: 335px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #979797;
+    line-height: 2;
+}
+
+input::placeholder {
+    color: #071629;
+    
+}
+
+.form {
+    line-height: 4;
+}
+
+/* footer section */
+footer{
     background-color: #071629;
+}
+
+.footer_main {
     height: 249px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+    font-size: 16px;
 }
 
-.footer_content {
-    
-    height: ;
-}
+ .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+ }
+
 
 footer p {
     color: #FFFFFF;
+    font-size: 12px;
+    opacity: 0.3;
+    padding-bottom: 2.5%;
 }
 

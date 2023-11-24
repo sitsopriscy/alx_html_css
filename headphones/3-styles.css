@@ -61,6 +61,11 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
 /* header section */
 
 .header_container{
@@ -195,7 +200,7 @@ h1 {
     align-items: center;
     
 }
-.part_3_dark h1 {
+.part_3_dark h2 {
   /* width: 488px; */
 }
 
@@ -204,11 +209,46 @@ h1 {
     
 }
 
-.pentagon h1 {
+.pentagon h2 {
     font-weight: bold;
     font-size: 46px;
 }
 
 .pentagon p {
     font-size: 14px;
+}
+
+/* Contact us section */
+
+.contact_us_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 373px;
+}
+.contact_us h2 {
+    color: #071629;
+}
+
+.form input{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    width: 335px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #979797;
+    line-height: 2;
+}
+
+input::placeholder {
+    color: #071629;
+    
+}
+
+.form {
+    line-height: 4;
 }
