@@ -3,7 +3,7 @@
     --link-hover-active: #ff6565;
     --color-white: white;
     --button-opacity-hover-active: 0.9;
-    --main-font-family: 'Source Sans Pro', sans-serif;
+    --main-font-family: C:\Users\User\Desktop\alx_html_css\alx_html_css\headphones\holberton_school-icon\fonts;
 }
 
 /* Base */
@@ -107,13 +107,10 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 255px;
-    /* height: 15px; */
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 12px;
-    /* align-items: flex-end; */
-    /* padding-top: 37px; */
 }
 
 .main_part {
@@ -122,9 +119,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding-top: 340px;
-    /* margin-left: 382px; */
-    /* width: 637px; */
-    /* height: 313px; */
     color: #FFFFFF;
 }
 
@@ -137,18 +131,18 @@ h1, h6 {
 }
 
 .main_part p {
-    width: 637px;
+    width: 600px;
     font-size: 16px;
 }
 
 
 @media screen and (max-width: 380px) {
     body {
-        max-width: 380px;
+        /* max-width: 380px; */
     }
     
     .header {
-        max-width: 380px;
+        /* max-width: 380px; */
         display: flex;
         flex-direction: row-reverse;
     }
@@ -158,9 +152,7 @@ h1, h6 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        /* width: 55%; */
-        /* padding-top: 340px; */
-}
+    }
 }
     .logo {
         width: 50%;
@@ -169,6 +161,36 @@ h1, h6 {
         display: ;
      }
 
+     .header { 
+        width: 100%;
+    }
+    .main_part {
+        width: 100%;
+    }
+    .part_1_what_we_do {
+        width: 100%;
+    }
+    .part_2_icons {
+        display: inline;
+        width: 100%;
+    }
+    .part_3_dark {
+        width: 100%;
+    }
+    .our_results {
+        width: 100%;
+    }
+    .contact_us_section {
+        .footer_main {
+            width: 100%;
+        }
+        footer div p { 
+            width: 100%;
+
+        }
+
+ }
+
      /* .main_part p {
         width: 55%;
     } */
@@ -176,7 +198,36 @@ h1, h6 {
      /* for scrren size between 380px and 780px */
      @media screen (min-width=380px and max-width=780px) {
         
+        .header { 
+            width: 100%;
+        }
+        .main_part {
+            width: 100%;
+        }
+        .part_1_what_we_do {
+            width: 100%;
+        }
+        .part_2_icons {
+            display: inline;
+            width: 100%;
+        }
+        .part_3_dark {
+            width: 100%;
+        }
+        .our_results {
+            width: 100%;
+        }
+        .contact_us_section {
+            .footer_main {
+                width: 100%;
+            }
+            footer div p { 
+                width: 100%;
+
+            }
+
      }
+}
 /* what to do section */
 
 .part_1_what_we_do {
@@ -194,7 +245,7 @@ h1, h6 {
 }
 
 .part_1_what_we_do p {
-    width: 637px;
+    width: 600px;
     font-size: 16px;
 }
 
@@ -269,7 +320,7 @@ h1, h6 {
 }
 
 .part_3_dark p {
-    width: 637px;
+    width: 600px;
     font-size: 16px;
     
 }
