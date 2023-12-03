@@ -3,7 +3,8 @@
     --link-hover-active: #ff6565;
     --color-white: white;
     --button-opacity-hover-active: 0.9;
-    --main-font-family: "Source Sans 3 'Courier New' monospace, sans-serif";
+    /* --main-font-family: "Source Sans Pro"; */
+    --main-font-family: 'Source Sans 3';
 }
 
 /* Base */
@@ -140,6 +141,7 @@ h1, h6 {
     width: 600px;
     font-size: 16px;
 }
+
 
 
 /* what to do section */
@@ -317,5 +319,82 @@ footer p {
     font-size: 12px;
     opacity: 0.3;
     padding-bottom: 2.5%;
+}
+
+
+
+
+/* Media query for tablets (portrait and landscape) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .nav_menu ul {
+        width: 100%; 
+    }
+    
+    .toggle_btn {
+        display: block; 
+    }
+
+    .our_results {
+        height: 876px;
+    }
+
+    .part_2_icons {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .icon_items, .pentagon {
+        width: 45%; 
+        margin: 10px; 
+    }
+
+    .icon_items p {
+        display: inline-flex;
+    }
+    .pentagon p, .pentagon h3{
+        display: flex;
+        padding-left: 14%;
+    }
+
+    .dot {
+        padding-left: 13%;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin-top: 20px;  
+    }
+
+
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header_container {
+      
+    }
+
+    .nav_menu ul {
+        flex-direction: column; 
+    }
+
+    .part_2_icons,
+    .dot {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .icon_items,
+    .pentagon {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
 }
 
