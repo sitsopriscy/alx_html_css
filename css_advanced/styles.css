@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
+header {
+    background-image: url("./images/pic1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.heading {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 2%;
+}
+
+.logo {
+    width: 10%;
+    color: white;
+}
+
+.nav-items {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    column-gap: 25px;
+    cursor: context-menu;
+
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.banner h1 {
+    font-weight: 400;
+    font-size: 120px;
+    margin-bottom: 0;
+}
+
+.motto {
+    display: flex;
+    column-gap: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+button {
+    border-radius: 25px;
+    height: 44px;
+    width: 162px;
+    font-weight: 600;
+    background-color: #C271FF;
+    margin-bottom: 6%;
+    border: none;
+    color: white;
+}
+
+.banner>h2 {
+    font-size: 32px;
+    font-weight: 100;
+}
+
+span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+
+.students {
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+
+.student {
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+
+.student>img {
+    width: 70%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.student>h3 {
+    font-size: 18px;
+}
+
+.student>p {
+    font-style: italic;
+
+}
