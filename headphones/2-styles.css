@@ -1,155 +1,403 @@
-/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
 :root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #FF6565;
+    --spacing-xxl: 125px;
+    --spacing-xl: 90px;
+    --spacing-lg: 75px;
+    --spacing-md: 30px;
+    --spacing-s: 25px;
+    --spacing-xs: 15px;
+    --spacing-xxs: 5px;
+
+
+    --font-size-xxs: 12px;
+    --font-size-xs: 14px;
+    --font-size-s: 16px;
+    --font-size-md: 25px;
+    --font-size-lg: 32px;
+    --font-size-xl: 46px;
+
     --link-hover-active: #ff6565;
     --color-white: white;
     --button-opacity-hover-active: 0.9;
-    --main-font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Base */
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-  /* font-size: 60%; */
-}
-body {
-    font-family: var(--main-font-family);
-}
-a {
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-a:hover, a:active {
-    color: var(--link-hover-active);
-}
-.button {
-    background: var(--link-hover-active);
-	color: var(--color-white);
-    font-weight: bold;
-	border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 162px;
-    height: 44px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    /* padding: 17px 7px; */
-}
 
 body {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    max-width: 1400px;
+
 }
 
-p {
-    font-size: 16px;
-    word-spacing: -2px;
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 32px;
-}
+/* header */
 
-h2 {
-    font-weight: bold;
-    font-size: 32px;
-}
-
-/* header section */
-
-.header_container{
-    background-image:url(./images/headphones_hero_1.jpg);
-    /* width: auto; */
+header {
     height: 800px;
-    border: 0px;
-    text-align: center;
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--primary-color);
+    background-position: center;
+    /* margin-top: 2px; */
 }
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 64px;
-    color: #979797;
+/* humburger */
+
+
+.menu-toggle {
+    display: none;
+    /* Hide the checkbox */
 }
 
-.logo img {
-    /* width: 161px; */
-    height: 32px;
-    /* padding-top: 24px;
-    margin: 0px; */
+.hamburger {
+    cursor: pointer;
+    font-size: 20px;
+    /* position: relative; */
+    display: none;
 }
-.nav_menu {
+
+/* .small-screen-sub-nav {
+    display: none;
+} */
+.sub-nav {
+    /* display: none; */
+}
+
+.menu-toggle:checked+.sub-nav {
+    display: block;
+    /* Show the navigation items when the checkbox is checked */
+}
+
+.nav-items {
+    padding-top: 25px;
+    /* background-color: greenyellow; */
+
+}
+
+nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    width: 255px;
-    height: 15px;
-    /* padding-top: 37px; */
+    align-items: center;
+    height: 32px;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* width: 1000px; */
+    padding: 0;
+    /* background-color: red; */
+
 }
 
-.main_part {
+
+
+.sub-nav {
+    font-size: var(--font-size-xxs);
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    column-gap: var(--spacing-md);
+    cursor: context-menu;
+}
+
+li:hover {
+    color: var(--link-hover-active);
+    opacity: var(--button-opacity-hover-active);
+}
+
+.nav-image {
+    height: var(--font-size-lg);
+}
+
+.main-part {
+    height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 372px;
-    /* margin-left: 382px; */
-    /* width: 637px; */
-    height: 313px;
-    color: #FFFFFF;
+    justify-content: center;
 }
 
-.main_part h4 {
+.text {
+    text-align: center;
+    margin-top: 160px;
+    /* margin-left: 26px; */
+    /* background-color: green; */
+}
+
+.text>h1 {
     font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+
+.text>h6 {
+    font-weight: 600;
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+
 }
-.main_part p {
+
+.text>p {
     width: 637px;
+    /* line-height: 1.6; */
+    font-weight: normal;
+    font-size: 16px;
+    opacity: .9;
 }
 
-.main_part_title {
-    line-height: 5px;
+.button {
+    border-radius: var(--spacing-s);
+    background-color: var(--secondary-color);
+    background: var(--link-hover-active);
+    color: var(--color-white);
+    font-weight: bold;
+    border: none;
+    height: 44px;
+    width: 162px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
-/* what to do section */
+input[value] {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* part_1_what_we_do */
 
 .part_1_what_we_do {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-left: 382px; */
-    /* margin-top: 110px; */
-    /* flex-wrap: wrap; */
-    /* width: 637px; */
-    padding-top: 5%;
-    padding-bottom: 5%;
-    /* height: 184px; */
+    text-align: center;
+    margin-top: 75px;
+    color: black;
+
 }
 
-.part_1_what_we_do p {
+.part_1_what_we_do>p {
     width: 637px;
+    line-height: 1.6;
+    font-weight: normal;
+    font-size: 16px;
 }
 
+.part_1_what_we_do>h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
 
-/* part 2 icons section */
+/* part_2_icons_section */
+
 .part_2_icons {
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 5%;
+    justify-content: space-between;
+    /* width: 1002px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* background-color: red; */
 }
 
-.part_2_icons .icon_items {
+
+.icon_items {
     width: 207px;
+    /* height: 180px; */
+    text-align: center;
 }
 
-.part_2_icons p {
+.icon_items>img {
+    height: 32%;
+}
+
+.icon_items>h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.icon_items>p {
+    font-weight: normal;
     font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Our results section */
+
+.our_results {
+    height: 650px;
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part_3_dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.part_3_dark>h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+
+.part_3_dark>p {
+    font-weight: normal;
+    font-size: 16px;
+    width: 637px;
+    opacity: .9;
+}
+
+.dot {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.pentagon {
+    background-image: url(./images/pentagone.png);
+    height: 190px;
+    width: 190px;
+    background-size: 190px;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0.5;
+}
+
+.pentagon>h3 {
+    font-weight: bold;
+    font-size: 46px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    opacity: .9;
+}
+
+.pentagon>p {
+    font-weight: normal;
+    font-size: 14px;
+    opacity: .9;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 1282px) {
+    html {
+        margin-left: 13.5%;
+        background-color: black;
+    }
+
+    body {
+        background-color: #FFFFFF;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1281px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        margin-left: 66px;
+        margin-right: 66px;
+    }
+
+    .part_2_icons,
+    .dot {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        gap: 50px;
+    }
+
+    .our_results {
+        height: auto;
+    }
+
+    .text>p,
+    .part_1_what_we_do>p,
+    .part_3_dark>p {
+        width: 637px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    /* small-screen-sub-nav */
+    .sub-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-toggle:checked+.sub-nav {
+        display: none;
+    }
+
+    /* end */
+
+    .part_2_icons,
+    .dot {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        gap: 20px;
+    }
+
+    .our_results {
+        height: auto;
+    }
+
+    .text>p,
+    .part_1_what_we_do>p,
+    .part_3_dark>p,
+    .pentagon>p {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
