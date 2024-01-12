@@ -26,6 +26,7 @@ header {
 
 .logo {
     width: 10%;
+    background-color: white;
 }
 
 a {
@@ -352,7 +353,7 @@ video {
     color: #ffff;
 }
 
-.logo-socials {
+.logo-and-socials {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -364,4 +365,10 @@ video {
     margin-bottom: 2%;
     font-size: 12px;
     opacity: 0.5;
+}
+
+.socials {
+    display: flex;
+    margin-right: 15%;
+    gap: 15%;
 }
