@@ -175,7 +175,7 @@ div>img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -194,6 +194,7 @@ div>img {
 .part_2_tutorials>h1 {
     font-weight: 100;
     font-size: 32px;
+    margin-bottom: 3%;
 }
 
 h1>span {
@@ -215,7 +216,7 @@ h1>span {
     margin-left: -5%;
 }
 
-figcaption {
+.Phillip-Massey>p {
     font-weight: 600;
     font-size: 14px;
     color: #C271FF;
@@ -270,6 +271,14 @@ video {
     font-size: 32px;
     opacity: .9;
     font-weight: 100;
+}
+
+
+.dot>img {
+    width: 20%;
+    height: 20%;
+    /* background-color: #C271FF; */
+    /* color: #C271FF; */
 }
 
 .dots {
