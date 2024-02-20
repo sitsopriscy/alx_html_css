@@ -1,0 +1,99 @@
+<!-- Develop an HTML feedback form with checkboxes to capture user opinions and the ability to upload a file:
+
+Include fields for the user’s name, email, checkboxes for various feedback options (e.g., excellent, good, average, poor), and a file upload field.
+Ensure that the user can select multiple checkboxes.
+Specify the file upload field using the <input type="file"> element.
+Implement HTML5 validation to ensure the name, email, at least one checkbox, and a file are filled out. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        form {
+            border: 1px solid gray;
+            border-radius: 5%;
+        }
+
+        ul {
+            list-style: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5%;
+        }
+
+
+        button {
+            margin-left: 20%;
+            width: 40%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Your Feedback</h2>
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" name="userName" id="name" required>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="userEmail" id="email" required>
+            </li>
+            <li>
+                <label>Feedback Options</label>
+                <div>
+                    <input type="checkbox" id="good" name="feedback" value="excellent">
+                    <label for="excellent">Excellent</label>
+
+                    <input type="checkbox" id="excellent" name="feedback" value="good">
+                    <label for="good">Good</label>
+
+                    <input type="checkbox" id="average" name="feedback" value="average">
+                    <label for="average">Average</label>
+
+                    <input type="checkbox" id="poor" name="feedback" value="poor">
+                    <label for="poor">Poor</label>
+                </div>
+            </li>
+            <li>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+            </li>
+            <li>
+                <button type="submit">Submit Feedback</button>
+            </li>
+        </ul>
+    </form>
+
+    <script>
+        function validateForm() {
+            var checkboxes = document.querySelectorAll('input[name="feedback"]:checked');
+            if (checkboxes.length === 0) {
+                alert("Please select at least one feedback option.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

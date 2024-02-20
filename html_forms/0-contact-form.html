@@ -1,0 +1,88 @@
+<!-- Create an HTML form for a basic contact form with the following requirements:
+
+Include fields for the user’s name, email address, and message.
+Apply appropriate HTML5 validation attributes to ensure the name and email fields are required and that the email field accepts a valid email format.
+Use a <textarea> element for the message field to allow for a long description and not limit it to just one line.
+Add a submit button to submit the form. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        form {
+            margin-top: -1em;
+            border: 1px solid gray;
+            border-radius: 5%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        button {
+            margin-left: 8em;
+            width: 5em;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Your Contact details</h2>
+    <form action="#" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="userName" required>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="userEmail" required>
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea name="userMessage" id="message"></textarea>
+            </li>
+            <li>
+                <button type="submit" value="submit">Submit</button>
+            </li>
+        </ul>
+
+    </form>
+
+</body>
+
+</html>
